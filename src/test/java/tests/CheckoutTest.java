@@ -1,5 +1,6 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -29,6 +30,7 @@ public class CheckoutTest {
 
     @BeforeMethod
     public void openBrowser() {
+        WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

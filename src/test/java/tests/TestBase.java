@@ -1,5 +1,6 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
@@ -17,6 +18,7 @@ public class TestBase {
 
     @BeforeMethod
     public void OpenBrowser() {
+        WebDriverManager.edgedriver().setup();
         driver = new EdgeDriver();
         driver.get("https://demo.getmarketspace.com/");
         driver.manage().window().maximize();
