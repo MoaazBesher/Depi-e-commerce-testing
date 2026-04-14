@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -31,7 +32,12 @@ public class CheckoutTest {
     @BeforeMethod
     public void openBrowser() {
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--ignore-certificate-errors");
+        options.setAcceptInsecureCerts(true);
+        
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
