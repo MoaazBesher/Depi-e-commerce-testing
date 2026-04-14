@@ -128,7 +128,7 @@ public class TestListener implements ITestListener, ISuiteListener {
         extent.attachReporter(spark);
         extent.setSystemInfo("Application", "MarketSpace Demo");
         extent.setSystemInfo("Base URL",    "https://demo.getmarketspace.com");
-        extent.setSystemInfo("Browser",     "Microsoft Edge");
+        extent.setSystemInfo("Browser",     "Google Chrome");
         extent.setSystemInfo("Environment", "QA");
         extent.setSystemInfo("Team",        "DEPI");
     }
@@ -142,7 +142,7 @@ public class TestListener implements ITestListener, ISuiteListener {
         System.out.println("  +" + BAR + "+");
         boxRow("Suite   : " + name);
         boxRow("URL     : https://demo.getmarketspace.com");
-        boxRow("Browser : Microsoft Edge");
+        boxRow("Browser : Google Chrome");
         boxRow("Started : " + LocalDateTime.now()
                 .format(DateTimeFormatter.ofPattern("yyyy-MM-dd  HH:mm:ss")));
         System.out.println("  +" + BAR + "+");

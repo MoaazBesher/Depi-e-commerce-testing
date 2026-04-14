@@ -15,7 +15,7 @@ A professional, high-end automation testing framework built for the **MarketSpac
 *   **🏗️ Page Object Model (POM)**: Clean separation of test logic and UI interactions for maximum code reusability.
 *   **🚦 Smart Execution**: Custom **TestNG Listeners** provide real-time, professional console output with progress banners and summary tables.
 *   **🔧 Centralized Config**: Management of environment variables, timeouts, and credentials via `config.properties`.
-*   **🌐 Cross-Browser Ready**: Optimized for **Microsoft Edge** with seamless Selenium 4 auto-driver detection.
+*   **🌐 Cross-Browser Ready**: Optimized for **Google Chrome** with seamless Selenium 4 auto-driver detection.
 *   **🛒 Comprehensive Coverage**:
     *   Authentication (Login/Signup)
     *   Search Functionality
@@ -48,7 +48,7 @@ src
 ### Prerequisites
 *   **JDK 21** or higher
 *   **Maven** 3.x
-*   **Microsoft Edge** browser
+*   **Google Chrome** browser
 
 ### Installation
 1.  Clone the repository:
