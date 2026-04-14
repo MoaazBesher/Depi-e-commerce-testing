@@ -89,9 +89,6 @@ The console output will display a premium summary like this:
 
 ---
 
-## 👨‍💻 Author
+## Author
 **Moaaz Besher**  
 *Quality Assurance Automation Engineer*
-
----
-> Made with ❤️ for the DEPI Project.
