@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  IDE fallback testng.xml — right-click > Run in IntelliJ/Eclipse.
+  Maven uses src/test/resources/testng.xml instead.
+-->
+<suite name="DEPI MarketSpace Test Suite">
+
+    <listeners>
+        <listener class-name="listeners.TestListener"/>
+    </listeners>
+
+    <test name="Regression Suite">
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.TestCart"/>
+            <class name="tests.TestProduct"/>
+            <class name="tests.TestSearch"/>
+            <class name="tests.CartTest"/>
+            <class name="tests.ProductTest"/>
+            <class name="tests.CheckoutTest"/>
+        </classes>
+    </test>
+
+</suite>
